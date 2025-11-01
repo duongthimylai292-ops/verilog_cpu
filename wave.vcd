@@ -1,34 +1,112 @@
 $date
-	Fri Oct 31 02:29:45 2025
+	Sat Nov 01 13:01:52 2025
 $end
 $version
 	Icarus Verilog
 $end
 $timescale
-	100ps
+	1ps
 $end
 $scope module tb $end
-$var wire 1 ! q $end
+$var wire 8 ! q [7:0] $end
 $var reg 1 " clk $end
-$var reg 1 # d $end
-$scope module uut $end
+$var reg 8 # d [7:0] $end
+$var reg 1 $ en $end
+$var reg 1 % rstn $end
+$scope module U $end
 $var wire 1 " clk $end
-$var wire 1 # d $end
-$var reg 1 ! q $end
+$var wire 8 & d [7:0] $end
+$var wire 1 $ en $end
+$var wire 1 % rstn $end
+$var wire 8 ' d_in [7:0] $end
+$var reg 8 ( q [7:0] $end
+$scope begin gen_mux[0] $end
+$upscope $end
+$scope begin gen_mux[1] $end
+$upscope $end
+$scope begin gen_mux[2] $end
+$upscope $end
+$scope begin gen_mux[3] $end
+$upscope $end
+$scope begin gen_mux[4] $end
+$upscope $end
+$scope begin gen_mux[5] $end
+$upscope $end
+$scope begin gen_mux[6] $end
+$upscope $end
+$scope begin gen_mux[7] $end
+$upscope $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-0#
+b0 (
+b0 '
+b0 &
+0%
+0$
+b0 #
 0"
-x!
+b0 !
 $end
-#50
-0!
+#5000
 1"
-#100
-1#
-#200
-0#
-#1200
+#10000
+0"
+#12000
+1%
+#15000
+1"
+#20000
+b10100101 '
+0"
+b10100101 #
+b10100101 &
+1$
+#25000
+b10100101 !
+b10100101 (
+1"
+#30000
+0"
+b0 #
+b0 &
+0$
+#35000
+1"
+#40000
+0"
+#45000
+1"
+#50000
+0"
+#55000
+1"
+#60000
+b111100 '
+0"
+b111100 #
+b111100 &
+1$
+#65000
+b111100 !
+b111100 (
+1"
+#70000
+0"
+#75000
+1"
+#80000
+0"
+b11111111 #
+b11111111 &
+0$
+#85000
+1"
+#90000
+0"
+#95000
+1"
+#100000
+0"
